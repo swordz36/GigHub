@@ -217,6 +217,14 @@
     <Compile Include="Migrations\201808050908068_PopulateGenresTable.Designer.cs">
       <DependentUpon>201808050908068_PopulateGenresTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808051607216_GigsTable.cs" />
+    <Compile Include="Migrations\201808051607216_GigsTable.Designer.cs">
+      <DependentUpon>201808051607216_GigsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808052002174_fixApplicationUserFk.cs" />
+    <Compile Include="Migrations\201808052002174_fixApplicationUserFk.Designer.cs">
+      <DependentUpon>201808052002174_fixApplicationUserFk.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -356,6 +364,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808050908068_PopulateGenresTable.resx">
       <DependentUpon>201808050908068_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808051607216_GigsTable.resx">
+      <DependentUpon>201808051607216_GigsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808052002174_fixApplicationUserFk.resx">
+      <DependentUpon>201808052002174_fixApplicationUserFk.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
