@@ -19,7 +19,7 @@ namespace GigHub.Models
         public Genre Genre { get; set; }
 
         [Required]
-        public Byte GenreId { get; set; }
+        public byte GenreId { get; set; }
 
     }
 }

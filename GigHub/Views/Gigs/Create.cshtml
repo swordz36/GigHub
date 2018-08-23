@@ -10,6 +10,7 @@
 {
     <p class="alert alert-info">All fields <strong >required</strong>.</p>
     @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
     <div class="form-group">
         @Html.LabelFor(model => model.Venue)
         @Html.TextBoxFor(model => model.Venue, new{ @class="form-control", placeholder = "Venue", autofocus="autofocus" })

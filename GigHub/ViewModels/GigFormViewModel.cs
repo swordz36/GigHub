@@ -16,8 +16,10 @@ namespace GigHub.ViewModels
         [Required]
         [ValidTime]
         public string Time { get; set; }
-        [Required] public byte Genre { get; set; }
-        [Required] public IEnumerable<Genre> Genres { get; set; }
+        [Required]
+        public byte Genre { get; set; }
+
+        public IEnumerable<Genre> Genres { get; set; }
 
         public DateTime GetDateTime()
         {
