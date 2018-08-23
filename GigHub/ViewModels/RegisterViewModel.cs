@@ -6,7 +6,7 @@ namespace GigHub.ViewModels
     {
         [Required]
         [StringLength(100)]
-        string Name { get; set; }
+        public string Name { get; set; }
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
@@ -22,10 +22,5 @@ namespace GigHub.ViewModels
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
-
-        [Required]
-        [StringLength(100)
-        ]
-        public string Name { get; set; }
     }
 }
