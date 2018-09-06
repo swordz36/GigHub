@@ -5,17 +5,23 @@
     {
     @Html.AntiForgeryToken()
 
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav">
         @*<li>
             @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
         </li>*@
+        <li class="nav-item">
+            <a href="#">
+                <i class="fas fa-globe-americas"></i>
+                <span class="badge">2</span>
+            </a>
+        </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 @User.Identity.GetUserName()
             </a>
-            <a href="#" class="nav-link dropdown-toggle">
+            @*<a href="#" class="nav-link dropdown-toggle">
 
-            </a>
+            </a>*@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="@Url.Action("Attending","Gigs")">Gigs I'm Going</a>
                 <a class="dropdown-item" href="@Url.Action("Mine","Gigs")">My Upcoming Gigs</a>
